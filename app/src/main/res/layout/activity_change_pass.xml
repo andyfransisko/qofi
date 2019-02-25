@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePass">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".ProfileCredentials">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-30dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="top|left|center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/vertical_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="658dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/inside_vscroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headerView"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/opass"
+                        android:layout_width="320dp"
+                        android:layout_height="75dp"
+                        android:layout_alignStart="@+id/changeprof"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="206dp"
+                        android:layout_marginBottom="376dp"
+                        android:background="@drawable/edittextbest"
+                        android:fontFamily="@font/coresansgmedium"
+                        android:hint="Old Password"
+                        android:inputType="textPassword"
+                        android:padding="25dp"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/account" />
+
+                    <EditText
+                        android:id="@+id/npass"
+                        android:layout_width="320dp"
+                        android:layout_height="75dp"
+                        android:layout_alignStart="@+id/changeprof"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="281dp"
+                        android:layout_marginBottom="301dp"
+                        android:background="@drawable/edittextbest"
+                        android:fontFamily="@font/coresansgmedium"
+                        android:hint="New Password"
+                        android:inputType="textPassword"
+                        android:padding="25dp"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/account" />
+
+                    <EditText
+                        android:id="@+id/cpass"
+                        android:layout_width="320dp"
+                        android:layout_height="75dp"
+                        android:layout_alignStart="@+id/changeprof"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="356dp"
+                        android:layout_marginBottom="226dp"
+                        android:background="@drawable/edittextbest"
+                        android:fontFamily="@font/coresansgmedium"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:padding="25dp"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/account" />
+
+                    <Button
+                        android:id="@+id/changeprof"
+                        android:layout_width="293dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="482dp"
+                        android:layout_marginBottom="120dp"
+                        android:background="@drawable/qofiaccbtn"
+                        android:fontFamily="@font/coresansgbold"
+                        android:text="SAVE CHANGES"
+                        android:textColor="@color/default_fill_color"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="166dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/changesuccess" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/coresansbold"
+            android:text="Change Password"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

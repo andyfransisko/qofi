@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentPreferences">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="top|left|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:cropToPadding="false"
+            android:gravity="left"
+            android:padding="12dp"
+            app:srcCompat="@drawable/bacc" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="10dp"
+            android:cropToPadding="false"
+            android:paddingLeft="120dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            app:srcCompat="@drawable/profile" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="526dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/inside_vscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerView"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/cartcontent_pdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="55dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/coffeeartcontent_pref" />
+
+                <TextView
+                    android:id="@+id/cartcontent_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cartcontent_pdesc"
+                    android:layout_alignBottom="@+id/cartcontent_pdesc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:paddingLeft="15dp"
+                    android:text="COFFEE ART"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+
+                <TextView
+                    android:id="@+id/contentpref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/coresansgbold"
+                    android:paddingLeft="15dp"
+                    android:text="Content Preferences"
+                    android:textAlignment="textStart"
+                    android:textColor="#A8A5A7"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/cbeanscontent_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cartcontent_pdesc"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/coffeebeanscontent" />
+
+                <TextView
+                    android:id="@+id/cbeanscontentp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cbeanscontent_desc"
+                    android:layout_alignBottom="@+id/cbeanscontent_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:paddingLeft="15dp"
+                    android:text="COFFEE BEANS"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/cbrewingcontent_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cbeanscontent_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/coffeebrewcontent" />
+
+                <TextView
+                    android:id="@+id/cbrewingcontentp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/cbrewingcontent_desc"
+                    android:layout_alignBottom="@+id/cbrewingcontent_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:paddingLeft="15dp"
+                    android:text="COFFEE BREWING"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/ctypecontent_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cbrewingcontent_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/coffeetypescontent" />
+
+                <TextView
+                    android:id="@+id/ctypecontentp_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ctypecontent_desc"
+                    android:layout_alignBottom="@+id/ctypecontent_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:paddingLeft="15dp"
+                    android:text="COFFEE TYPES"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_nav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/limingjobu"
+        app:itemTextColor="@color/limingjobu"
+        app:menu="@menu/nav_items">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

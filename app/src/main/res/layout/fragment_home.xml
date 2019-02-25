@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/inside_vscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headerView"
+                android:layout_marginTop="90dp">
+
+                <ImageView
+                    android:id="@+id/bgImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="-5dp"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mainmenubg" />
+
+                <TextView
+                    android:id="@+id/qofurecommend_desc"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qofurecommend"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="Get updated news from our app mascot!"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/qofurecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="290dp"
+                    android:fontFamily="@font/coresansgbold"
+                    android:text="Qofu Recommends"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ma_main"
+                    android:layout_alignStart="@+id/qofurecommend_desc"
+                    android:layout_marginBottom="-54dp"
+                    android:fontFamily="@font/coresansgbold"
+                    android:text="Welcome,"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/unamelog"
+                    android:layout_width="244dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/welcome"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/welcome"
+                    android:fontFamily="@font/coresansgbold"
+                    android:text="Jack Dickson"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/ma_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/qofurecommend_desc"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="54dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="Here are some recommendations from us!"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ma_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/qofurecommend_desc"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="240dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="International Coffee Day for Baristas"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="310dp"
+                    android:layout_height="140dp"
+                    android:layout_above="@+id/ma_head"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="-240dp"
+                    app:srcCompat="@drawable/internationalcoffeeday" />
+
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="170dp"
+                    android:layout_height="270dp"
+                    android:layout_below="@+id/qofurecommend_desc"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/metalstraws" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="170dp"
+                    android:layout_height="270dp"
+                    android:layout_alignTop="@+id/imageView16"
+                    android:layout_toEndOf="@+id/imageView16"
+                    app:srcCompat="@drawable/sinyoonloongart" />
+
+
+                <TextView
+                    android:id="@+id/qontrolmind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="650dp"
+                    android:fontFamily="@font/coresansgbold"
+                    android:text="Qontrol Your Mind"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/qontrolmind_desc"
+                    android:layout_width="255dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qontrolmind"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="Control your mind with our soothing trivia or facts about coffee by various references! "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp" />
+
+            <ScrollView
+                android:layout_below="@+id/qontrolmind_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="312dp"
+                            android:layout_height="154dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="30dp"
+                            app:srcCompat="@drawable/qontrolmind" />
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="312dp"
+                            android:layout_height="154dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentStart="true"
+                            app:srcCompat="@drawable/qontrolmind1" />
+
+                        <ImageView
+                            android:id="@+id/imageView29"
+                            android:layout_width="312dp"
+                            android:layout_height="154dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentStart="true"
+                            app:srcCompat="@drawable/qontrolmind2" />
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="312dp"
+                            android:layout_height="154dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentStart="true"
+                            app:srcCompat="@drawable/qontrolmind3" />
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="312dp"
+                            android:layout_height="154dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentStart="true"
+                            app:srcCompat="@drawable/qontrolmind4" />
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+            </ScrollView>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

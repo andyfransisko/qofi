@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/inside_vscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerView"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bgImage2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-5dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mainmenubg" />
+
+            <Button
+                android:id="@+id/contentpref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changeprofile"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/profilebtn"
+                android:fontFamily="@font/coresansgmedium"
+                android:paddingLeft="15dp"
+                android:text="Content Preferences"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/changepass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contentpref"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/profilebtn"
+                android:fontFamily="@font/coresansgmedium"
+                android:paddingLeft="15dp"
+                android:text="Change Password"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/clearfavnotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changepass"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/profilebtn"
+                android:fontFamily="@font/coresansgmedium"
+                android:paddingLeft="15dp"
+                android:text="Clear All Favorited Notes"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/aboutqofi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clearfavnotes"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/profilebtn"
+                android:fontFamily="@font/coresansgmedium"
+                android:paddingLeft="15dp"
+                android:text="About Qofi"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutqofi"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/profilebtn2"
+                android:fontFamily="@font/coresansgmedium"
+                android:paddingLeft="15dp"
+                android:text="Log Out"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/bgImage2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="@font/coresansgmedium"
+                android:padding="0dp"
+                android:paddingBottom="0dp"
+                android:text="These settings affect all of your Qofi personalization\non this device."
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/usrname"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-75dp"
+                android:fontFamily="@font/coresansgmedium"
+                android:padding="5dp"
+                android:text="Jack Dickson"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/usrname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="81dp"
+                android:fontFamily="@font/coresansgmedium"
+                android:padding="5dp"
+                android:text="jackdickson"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/eml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="97dp"
+                android:fontFamily="@font/coresansgmedium"
+                android:padding="5dp"
+                android:text="jackdickson@gmail.com"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/changeprofile"
+                android:layout_width="163dp"
+                android:layout_height="27dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="135dp"
+                android:background="@drawable/buttoncurve"
+                android:fontFamily="@font/coresansgmedium"
+                android:text="EDIT"
+                android:textColor="@color/limingjobu"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

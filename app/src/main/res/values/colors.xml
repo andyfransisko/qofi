@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a39069</color>
+    <color name="colorPrimaryDark">#A39069</color>
+    <color name="colorAccent">#000000</color>
+    <color name="limingjobu">#ffffff</color>
+    <color name="account">#cfcfcf</color>
+    <!--Dots active colors-->
+    <color name="dotLight">#A39069</color>
+
+    <!--Dots inactive colors-->
+    <color name="dotDark">#e4e4e4</color>
+
+    <array name="introdots">
+        <item>@color/dotLight</item>
+        <item></item>
+    </array>
+</resources>

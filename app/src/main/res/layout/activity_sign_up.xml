@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="153dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="First Name"
+        android:inputType="textWebEditText"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="153dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@+id/fname"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="Last Name"
+        android:inputType="textWebEditText"
+        android:padding="15dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="294dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/cpassword"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="293dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="475dp"
+        android:background="@drawable/qofiaccbtn"
+        android:fontFamily="@font/coresansgbold"
+        android:text="SIGN UP"
+        android:textColor="@color/default_fill_color"
+        android:textSize="18sp" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="10dp"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/brownbacc" />
+
+</RelativeLayout>

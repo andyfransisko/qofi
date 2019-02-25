@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/qofi_brown" />
+
+    <EditText
+        android:id="@+id/unamelog"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="227dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:hint="Username"
+        android:inputType="textWebEditText"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="166dp"
+        android:background="@drawable/edittextbest"
+        android:fontFamily="@font/coresansgmedium"
+        android:gravity="top"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:padding="25dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/account" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="293dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/qofiaccbtn"
+        android:fontFamily="@font/coresansgbold"
+        android:text="LOGIN"
+        android:textColor="@color/default_fill_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginStart="81dp"
+        android:fontFamily="@font/coresansgregular"
+        android:padding="5dp"
+        android:text="Don't have an account?"
+        android:textColor="@color/account"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/signuplog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="81dp"
+        android:layout_toEndOf="@+id/textView"
+        android:fontFamily="@font/coresansgbold"
+        android:padding="5dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BrowseFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="90dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/inside_vscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/arabica" />
+
+                <TextView
+                    android:id="@+id/text1_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="ARABICA"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/excelsa" />
+
+                <TextView
+                    android:id="@+id/text2_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="EXCELSA"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/liberica" />
+
+                <TextView
+                    android:id="@+id/text3_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="LIBERICA"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/pic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/robusta" />
+
+                <TextView
+                    android:id="@+id/text4_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="ROBUSTA"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/comingsoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic4"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="60dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/morecontent" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

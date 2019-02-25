@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BrowseFragment4">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/inside_vscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerView"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/affogato" />
+
+                <TextView
+                    android:id="@+id/text1_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="AFFOGATO"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/americano" />
+
+                <TextView
+                    android:id="@+id/text2_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="AMERICANO"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/cappuccino" />
+
+                <TextView
+                    android:id="@+id/text3_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="CAPPUCCINO"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/pic7"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic3"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/espresso" />
+
+                <TextView
+                    android:id="@+id/text7_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="ESPRESSO"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/pic10"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic7"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/latte" />
+
+                <TextView
+                    android:id="@+id/text10_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="LATTE"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/pic12"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic10"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/macchiato" />
+
+                <TextView
+                    android:id="@+id/text12_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pic12"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:fontFamily="@font/coresansgmedium"
+                    android:text="MACCHIATO"
+                    android:textAlignment="center"
+                    android:textColor="@color/limingjobu"
+                    android:textSize="36sp" />
+
+
+                <ImageView
+                    android:id="@+id/comingsoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/pic12"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="60dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/morecontent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>
